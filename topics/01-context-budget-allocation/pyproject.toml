@@ -1,0 +1,13 @@
+[project]
+name = "context-budget-benchmark"
+version = "0.1.0"
+description = "Synthetic and real-API benchmarks for deterministic context-budget allocation"
+requires-python = ">=3.11"
+dependencies = ["tiktoken>=0.7", "openai>=3.13,<4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "matplotlib>=3.8"]
+
+[tool.pytest.ini_options]
+testpaths = ["benchmark/tests"]
+pythonpath = ["."]

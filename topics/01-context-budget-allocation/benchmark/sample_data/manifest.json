@@ -1,0 +1,162 @@
+{
+  "seed": 42,
+  "tokenizer": "cl100k_base",
+  "workloads": [
+    {
+      "id": "fits_all",
+      "name": "Everything fits",
+      "shape": "normal",
+      "n_items": 17,
+      "approx_tokens_cl100k": 1097,
+      "evidence": [
+        "rag_billing_retry"
+      ]
+    },
+    {
+      "id": "history_heavy",
+      "name": "History-heavy (answer in recent turn)",
+      "shape": "history-heavy",
+      "n_items": 134,
+      "approx_tokens_cl100k": 84906,
+      "evidence": [
+        "hist_0118"
+      ]
+    },
+    {
+      "id": "retrieval_heavy",
+      "name": "Retrieval-heavy",
+      "shape": "retrieval-heavy",
+      "n_items": 65,
+      "approx_tokens_cl100k": 80843,
+      "evidence": [
+        "rag_sla_p1"
+      ]
+    },
+    {
+      "id": "tool_heavy",
+      "name": "Tool-heavy",
+      "shape": "tool-heavy",
+      "n_items": 39,
+      "approx_tokens_cl100k": 63634,
+      "evidence": [
+        "toolres_inc2044"
+      ]
+    },
+    {
+      "id": "multiplayer_heavy",
+      "name": "Multiplayer-heavy",
+      "shape": "multiplayer-heavy",
+      "n_items": 56,
+      "approx_tokens_cl100k": 59319,
+      "evidence": [
+        "agent_rate_limit"
+      ]
+    },
+    {
+      "id": "memory_heavy",
+      "name": "Memory-heavy",
+      "shape": "memory-heavy",
+      "n_items": 59,
+      "approx_tokens_cl100k": 57881,
+      "evidence": [
+        "mem_csv_monday"
+      ]
+    },
+    {
+      "id": "mixed_overflow",
+      "name": "Mixed overflow",
+      "shape": "mixed-overflow",
+      "n_items": 115,
+      "approx_tokens_cl100k": 114916,
+      "evidence": [
+        "rag_sla_p1"
+      ]
+    },
+    {
+      "id": "tool_bomb",
+      "name": "Huge tool output",
+      "shape": "tool-bomb",
+      "n_items": 18,
+      "approx_tokens_cl100k": 56042,
+      "evidence": [
+        "rag_billing_retry"
+      ]
+    },
+    {
+      "id": "oversized_user",
+      "name": "Oversized user input",
+      "shape": "oversized-user",
+      "n_items": 20,
+      "approx_tokens_cl100k": 48351,
+      "evidence": [
+        "rag_billing_retry"
+      ]
+    },
+    {
+      "id": "cross_tenant",
+      "name": "Adversarial cross-tenant data",
+      "shape": "adversarial",
+      "n_items": 16,
+      "approx_tokens_cl100k": 903,
+      "evidence": [
+        "rag_rate_limit"
+      ]
+    },
+    {
+      "id": "needle_rag",
+      "name": "Small critical evidence easy to lose",
+      "shape": "needle",
+      "n_items": 73,
+      "approx_tokens_cl100k": 76820,
+      "evidence": [
+        "rag_cutoff_needle"
+      ]
+    },
+    {
+      "id": "policy_pressure",
+      "name": "Critical policy under heavy pressure",
+      "shape": "policy-pressure",
+      "n_items": 106,
+      "approx_tokens_cl100k": 119843,
+      "evidence": []
+    },
+    {
+      "id": "early_history",
+      "name": "Critical fact in the first history turn",
+      "shape": "early-history",
+      "n_items": 93,
+      "approx_tokens_cl100k": 64806,
+      "evidence": [
+        "hist_0000"
+      ]
+    },
+    {
+      "id": "knowledge_vs_recency",
+      "name": "Answer in knowledge, pressure from recent chat",
+      "shape": "knowledge-vs-recency",
+      "n_items": 84,
+      "approx_tokens_cl100k": 63948,
+      "evidence": [
+        "rag_sla_p1"
+      ]
+    },
+    {
+      "id": "protected_pressure",
+      "name": "Protected user competes with huge paste",
+      "shape": "protected-pressure",
+      "n_items": 31,
+      "approx_tokens_cl100k": 60683,
+      "evidence": []
+    },
+    {
+      "id": "huge_mixed",
+      "name": "Huge mixed overflow",
+      "shape": "huge-mixed",
+      "n_items": 205,
+      "approx_tokens_cl100k": 288041,
+      "evidence": [
+        "rag_sla_p1"
+      ]
+    }
+  ]
+}
