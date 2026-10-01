@@ -224,5 +224,4 @@ topics/01-context-budget-allocation/results/real/
 # macOS metadata
 .DS_Store
 
-# Local-only archive of excluded projects, documents, and prior Git history.
 /legacy/

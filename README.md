@@ -8,7 +8,7 @@ This repository contains only the context-budget allocation research. It is not 
 
 ## Contents
 
-The research remains under [`topics/01-context-budget-allocation/`](topics/01-context-budget-allocation/) so existing module paths and document links remain valid.
+The implementation and research artifacts are in [`topics/01-context-budget-allocation/`](topics/01-context-budget-allocation/).
 
 - [Research brief and setup](topics/01-context-budget-allocation/README.md)
 - [Synthetic benchmark summary](topics/01-context-budget-allocation/BENCHMARK.md) and [analysis guide](topics/01-context-budget-allocation/BENCHMARK_GUIDE.md)
@@ -38,7 +38,3 @@ The synthetic suite evaluates 16 workloads, four allocators, and four context-wi
 Benchmark 2.0 adds frozen public-source data, OpenAI-backed retrieval, read-only GitHub/PyPI tools, and paid model inference. See its [reproduction guide](topics/01-context-budget-allocation/BENCHMARK_2.0.md) before running capture or evaluation. Credentials belong in your environment, never in committed files. Captured data and per-call results are excluded from Git by default.
 
 The published report describes a historical reference run; its raw capture and usage ledgers are not included here. Live evaluation requires new capture and incurs provider charges. Code-side spending caps are guardrails, not provider-enforced billing limits. The public-source scope tests do not establish confidential tenant isolation.
-
-## Local archive
-
-An ignored `legacy/` directory may exist on the original checkout to preserve excluded material and prior Git history. It is local-only and is not part of this repository's published content.
